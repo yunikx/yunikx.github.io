@@ -27,6 +27,56 @@ body {
   gap: 96px;
 }
 
+/* Plan Container */
+.plan-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.plan-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.plan-container ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.plan-container li {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.plan-container li:hover {
+  background: #e9ffe5;
+}
+
+.plan-container li span {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.passed {
+  border-left: 5px solid #4caf50;
+}
+
+.not-passed {
+  border-left: 5px solid #af4c4c;
+}
+
+.in-process {
+  border-left: 5px solid #afa84c;
+}
+
 
 
 
@@ -94,7 +144,7 @@ body {
     /* Project Cards */
 
     .project-card {
-      max-width: calc((100% - 32px) / 3);
+      max-width: calc((100% - 32px) / 2);
       display: flex;
       flex-direction: column;
       gap: 34px;
